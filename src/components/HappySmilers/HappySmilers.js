@@ -13,6 +13,7 @@ function HappySmilers() {
             try {
                 const data = await fetchTestimonials();
                 console.log(data);
+                
                 setTestimonials(data.results);
             } catch (err) {
                 setError(err.message);
