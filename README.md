@@ -52,6 +52,8 @@ RandomUser API
 
 https://randomuser.me/api/?results=5
 
+## Approach
+
 The Happy Smilers section fetches user data dynamically from the RandomUser API using React's useEffect hook and Fetch API. Loading and error states were implemented to handle API requests gracefully and improve user experience. The UI was built using reusable React components and responsive CSS to match the provided design across different screen sizes.
 ---
 
