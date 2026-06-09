@@ -1,70 +1,126 @@
-# Getting Started with Create React App
+# Unbundl Frontend Assessment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+This project is a React-based frontend application developed as part of the Unbundl Frontend Developer Assessment.
 
-In the project directory, you can run:
+The application includes:
 
-### `npm start`
+* Why Whistle section
+* Happy Smilers section
+* FAQ Accordion section
+* Responsive design for desktop, tablet, and mobile devices
+* API integration with loading and error handling
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+### Why Whistle
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* Reusable card-based section
+* Responsive grid layout
+* Figma-inspired UI implementation
 
-### `npm run build`
+### Happy Smilers
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* Data fetched from RandomUser API
+* Dynamic rendering using React
+* Loading state handling
+* Error state handling
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### FAQ Accordion
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* Expand/Collapse functionality
+* State management using React Hooks
+* Interactive user experience
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Tech Stack
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* React.js
+* JavaScript (ES6+)
+* CSS3
+* Fetch API
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## API Used
 
-## Learn More
+RandomUser API
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+https://randomuser.me/api/?results=5
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Approach
 
-### Code Splitting
+The Happy Smilers section fetches user data dynamically from the RandomUser API using React's useEffect hook and Fetch API. Loading and error states were implemented to handle API requests gracefully and improve user experience. The UI was built using reusable React components and responsive CSS to match the provided design across different screen sizes.
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Project Structure
 
-### Analyzing the Bundle Size
+src/
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+├── assets/
 
-### Making a Progressive Web App
+├── components/
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+│   ├── WhyWhistle/
 
-### Advanced Configuration
+│   ├── HappySmilers/
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+│   └── FAQ/
 
-### Deployment
+├── data/
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+├── services/
 
-### `npm run build` fails to minify
+├── App.js
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+└── index.js
+
+---
+
+## Installation
+
+Clone the repository:
+
+git clone <repository-url>
+
+Navigate to the project folder:
+
+cd unbundl-frontend-assessment
+
+Install dependencies:
+
+npm install
+
+Run the development server:
+
+npm start
+
+---
+
+## Build for Production
+
+npm run build
+
+---
+
+## Git Commit History
+
+* Initialize project using Create React App
+* Build Why Whistle section
+* Build Happy Smilers section with API integration
+* Build FAQ accordion section
+
+## Links
+
+- Live Demo: https://unbundl-frontend-assessment.vercel.app
+- GitHub Repository: https://github.com/Rishabh2446/unbundl-frontend-assessment
+
+---
+
+## Author
+
+Rishabh Gupta
